@@ -5,15 +5,16 @@ import { userRepository } from "../repositories/UserRepository";
 export class UserController {
     async create(req: Request, res: Response){
 
-        const {name, email, phone} = req.body
+        const {name, email, phone, password} = req.body
 
         try {
-            const newUser = userRepository.create({name, email, phone})
+            const newUser = userRepository.create({name, email, phone, password})
 
             await userRepository.save(newUser)
 
             return res.status(201).json(newUser)
         } catch (error) {
+			console.error(error)
             return res.status(500).json({message: 'Internal server error'})
         }
     }

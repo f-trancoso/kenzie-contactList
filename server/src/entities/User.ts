@@ -1,5 +1,6 @@
-import { Entity, PrimaryGeneratedColumn, Column, OneToMany, CreateDateColumn} from "typeorm";
+import { Entity, PrimaryGeneratedColumn, Column, OneToMany, CreateDateColumn, BeforeInsert, BeforeUpdate} from "typeorm";
 import { Contact } from "./Contact";
+import bcrypt from 'bcryptjs'
 
 @Entity('users')
 export class User {
@@ -14,6 +15,15 @@ export class User {
 
     @Column()
     phone: string
+
+    @Column()
+    password: string
+
+    @BeforeInsert()
+    @BeforeUpdate()
+    hashPassword(){
+        this.password = bcrypt.hashSync(this.password, 8)
+    }
 
     @CreateDateColumn()
     created_at: Date
