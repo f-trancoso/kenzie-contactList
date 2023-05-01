@@ -101,7 +101,7 @@ const Register = () => {
               <div className="div--buttonSubmit">
                 <Button
                   background={"main1"}
-                  color={""}
+                  color={"text1"}
                   text={"Cadastrar"}
                   type={'submit'}
                   border="main1"
@@ -114,7 +114,7 @@ const Register = () => {
 
               <Button
                   background={"main1"}
-                  color={""}
+                  color={"text1"}
                   text={"Faça Login"}
                   border="main1"
                   onClick={() => navigate('/login')}

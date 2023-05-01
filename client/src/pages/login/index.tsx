@@ -75,7 +75,7 @@ export const Login = () => {
               <Button
                 background="transparent"
                 text="Entrar"
-                color="grey8"
+                color="text1"
                 border="main1"
               />
               
@@ -86,7 +86,7 @@ export const Login = () => {
                 <Button
                 background="transparent"
                 text="Cadastre-se"
-                color="text"
+                color="text1"
                 border="main1"
                 onClick={() => navigate('/register')}
                 />

@@ -1,10 +1,16 @@
 import styled from "styled-components"
 
 export const PageLoginStyled = styled.main`
-    /* width: 100%; */
     display: flex;
-    background-color: var(--grey7);
     justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--background);
+
+    p{
+        color: var(--text1);
+        font-weight: 600;
+    }
     
     .register-container{
         display: flex;
@@ -13,8 +19,8 @@ export const PageLoginStyled = styled.main`
         justify-content: center;
     }
 
-    .register-container p {
-        margin-bottom: 30px;
+    .register-container p{
+        margin-bottom: 20px;
     }
 
     .container {
@@ -22,34 +28,24 @@ export const PageLoginStyled = styled.main`
         padding-top: 40px;
         height: 40vh;
         width: 100%;
-        background-color: var(--grey7);
         max-width: 450px;
         display: flex;
         justify-content: center;
         flex-direction: column;
         align-items: center;
-        
-        @media (max-height: 800px) {
-            margin: 100px 0px 60px 0px; 
-        }
     }
 
     form {
-        border-radius: 8px;
-        margin-top: 40px;
+        
         width: 90%;
         height: 80%;
         min-height: 500px;
         display: flex;
         flex-direction: column;
-        gap: 24px;
         justify-content: center;
+        gap: 28px;
         padding: 0px 5%;
         color: black;
-
-        .input {
-            width: 100%;
-        }
 
         h1 {
             font-size: 32px;

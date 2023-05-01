@@ -2,22 +2,24 @@ import styled from "styled-components";
 
 export const PageRegisterStyled = styled.main`
   display: flex;
-  background-color: var(--grey7);
+  background-color: var(--background);
   justify-content: center;
+  width: 100vw;
+  height: 100vh;
+
+  p{
+    color: var(--text1);
+    font-weight: 600;
+  }
 
   .container {
     margin: 40px 0px 0px 0px;
     width: 100%;
-    background-color: var(--grey7);
     max-width: 450px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-
-    @media (max-height: 800px) {
-      margin: 100px 0px 60px 0px;
-    }
   }
 
   form {
@@ -27,39 +29,15 @@ export const PageRegisterStyled = styled.main`
     width: 90%;
     min-height: 500px;
     display: flex;
+    gap: 28px;
     flex-direction: column;
-    gap: 24px;
     justify-content: center;
-    padding: 20px 5%;
-
-    .input {
-      width: 100%;
-    }
+    align-items: center;
 
     h1 {
       font-size: 32px;
       text-align: center;
-      color: var(--main2)
-    }
-
-    .text2 {
-      align-self: center;
-      color: var(--grey3);
-    }
-
-    p {
-      color: var(--brand2);
-      font-size: 1rem;
-      font-weight: 600;
-    }
-
-    .div--buttonSubmit{
-      display: flex;
-      justify-content: center;
-    }
-
-    @media (max-height: 800px) {
-      margin: 0;
+      color: var(--main1)
     }
   }
 
