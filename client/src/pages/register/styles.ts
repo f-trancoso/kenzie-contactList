@@ -23,7 +23,7 @@ export const PageRegisterStyled = styled.main`
   form {
     margin: 30px 0px;
     border-radius: 8px;
-    background-color: var(--grey10);
+    background-color: var(--background);
     width: 90%;
     min-height: 500px;
     display: flex;

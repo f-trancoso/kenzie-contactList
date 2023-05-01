@@ -43,6 +43,8 @@ export const Login = () => {
         toast.error("Email ou senha incorretos", {
           autoClose: 1500,
         });
+      } finally {
+        navigate('/profile')
       }
     };
   

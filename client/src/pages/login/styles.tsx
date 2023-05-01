@@ -19,6 +19,7 @@ export const PageLoginStyled = styled.main`
 
     .container {
         margin: 40px 0px 0px 0px; 
+        padding-top: 40px;
         height: 40vh;
         width: 100%;
         background-color: var(--grey7);
@@ -35,7 +36,7 @@ export const PageLoginStyled = styled.main`
 
     form {
         border-radius: 8px;
-        background-color: var(--grey10);
+        margin-top: 40px;
         width: 90%;
         height: 80%;
         min-height: 500px;
@@ -44,6 +45,7 @@ export const PageLoginStyled = styled.main`
         gap: 24px;
         justify-content: center;
         padding: 0px 5%;
+        color: black;
 
         .input {
             width: 100%;
@@ -52,23 +54,8 @@ export const PageLoginStyled = styled.main`
         h1 {
             font-size: 32px;
             text-align: center;
+            color: var(--main1);
         }
-
-        .esqueci {
-            margin: -16px 32px 0px auto;
-            color: var(--grey2);
-            font-weight: 500;
-        }
-
-        .text2 {
-            align-self: center;
-            color: var(--grey3);
-        }
-
-        p:hover {
-            color: var(--brand2);
-        }
-        
     }
 
 `

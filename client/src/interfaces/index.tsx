@@ -38,6 +38,12 @@ export interface IContactResponse {
     created_at?: Date
 }
 
+export interface IEditContactRequest {
+    name?: string
+    email?: string
+    phone?: string
+}
+
 export interface IUserRequest {
     name: string
     password: string
